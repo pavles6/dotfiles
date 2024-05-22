@@ -1,0 +1,1 @@
+after cloning, running `stow .` will create symlinks in ~ for all files in the repo
