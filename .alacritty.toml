@@ -1,0 +1,11 @@
+[window]
+opacity = 0.9
+padding.x = 10
+blur = true
+
+[font]
+normal.family = "IosevkaTerm Nerd Font"
+size = 20
+
+[mouse]
+hide_when_typing = true

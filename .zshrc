@@ -30,8 +30,9 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 
-# Add in Powerlevel10k
+# Add in zsh plugins
 zinit ice depth=1; zinit light romkatv/powerlevel10k
+zinit light jeffreytse/zsh-vi-mode
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -52,7 +53,6 @@ autoload -U compinit && compinit
 zinit cdreplay -q
 
 # Keybindings
-bindkey -e
 bindkey '^j' history-search-backward
 bindkey '^k' history-search-forward
 
