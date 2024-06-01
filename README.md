@@ -9,3 +9,5 @@ per-device stuff or sensitive data should be in ` ~/.localrc` and will be automa
 - zsh
 - alacritty
 - gnu stow
+- fzf
+- [Iosevka](https://github.com/be5invis/Iosevka/releases) font
