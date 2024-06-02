@@ -4,8 +4,12 @@ padding.x = 10
 blur = true
 
 [font]
-normal.family = "Iosevka Term"
+normal.family = "IosevkaTerm Nerd Font"
 size = 20
 
 [mouse]
 hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3

@@ -94,3 +94,8 @@ export NVM_DIR="$HOME/.nvm"
 if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
+
+preexec() { print -Pn "\e]0;$1%~\a" }
+
+alias clear='clear -x'
+alias vim='nvim'
