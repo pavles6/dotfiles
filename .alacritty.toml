@@ -7,9 +7,6 @@ blur = true
 normal.family = "IosevkaTerm Nerd Font"
 size = 20
 
-[mouse]
-hide_when_typing = true
-
 [scrolling]
 history = 10000
 multiplier = 3
