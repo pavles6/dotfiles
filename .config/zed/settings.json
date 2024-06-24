@@ -1,0 +1,25 @@
+{
+  "indent_guides": {
+    "enabled": true
+  },
+  "theme": "Base16 Chalk",
+  "terminal": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "buffer_font_features": {
+    "calt": false
+  },
+  "confirm_quit": true,
+  "vim_mode": true,
+  "ui_font_size": 19,
+  "buffer_font_size": 19,
+  "scroll_sensitivity": 2,
+  "buffer_font_family": "IosevkaTerm Nerd Font",
+  "relative_line_numbers": true,
+  "buffer_font_weight": 500,
+  "ui_font_weight": 500,
+  "ui_font_family": "SF Pro Rounded"
+}
