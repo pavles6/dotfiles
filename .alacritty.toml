@@ -4,7 +4,7 @@ padding.x = 10
 blur = true
 
 [font]
-normal.family = "IosevkaTerm Nerd Font"
+normal.family = "Iosevka Term"
 size = 20
 
 [scrolling]
