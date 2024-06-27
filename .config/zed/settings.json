@@ -19,7 +19,6 @@
     }
   },
   "soft_wrap": "editor_width",
-  "preferred_line_length": 80,
   "buffer_font_features": {
     "calt": false
   },

@@ -1,4 +1,3 @@
-
 if [ ! -d $HOME/.antidote ]; then
     git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
 fi
@@ -10,15 +9,11 @@ source ~/.antidote/antidote.zsh
 
 antidote load
 
-
 source ~/.p10k.zsh
 
 # Keybindings
 bindkey '^j' history-search-backward
 bindkey '^k' history-search-forward
-
-bindkey -v
-
 bindkey '^F' autosuggest-accept
 
 # History

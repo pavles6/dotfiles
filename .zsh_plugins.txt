@@ -1,5 +1,5 @@
 romkatv/powerlevel10k
-# jeffreytse/zsh-vi-mode
+jeffreytse/zsh-vi-mode
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
