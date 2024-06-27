@@ -68,3 +68,5 @@ alias vim='nvim'
 export DENO_INSTALL="/Users/pavle/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="/Users/pavle/.bin:$PATH"
+
+echo $(whoami)
