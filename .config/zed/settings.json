@@ -2,7 +2,7 @@
   "indent_guides": {
     "enabled": true
   },
-  "theme": "Base16 Ayu Dark",
+  "theme": "Base16 iA Dark",
   "terminal": {
     "dock": "right",
     "font_family": "IosevkaTerm Nerd Font"
@@ -11,9 +11,10 @@
     "dock": "right"
   },
   "experimental.theme_overrides": {
+    "terminal.ansi.red": "#d86868",
     "syntax": {
       "operator": {
-        "color": "#d2a6ff"
+        "color": "#b98eb2"
       }
     }
   },
