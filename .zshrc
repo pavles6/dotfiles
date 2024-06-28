@@ -60,8 +60,4 @@ preexec() { print -Pn "\e]0;$1%~\a" }
 alias clear='clear -x'
 alias vim='nvim'
 
-export DENO_INSTALL="/Users/pavle/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-export PATH="/Users/pavle/.bin:$PATH"
-
 echo $(whoami)
