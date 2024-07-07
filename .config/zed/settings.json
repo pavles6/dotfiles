@@ -18,6 +18,11 @@
       }
     }
   },
+  "languages": {
+    "Python": {
+      "wrap_guides": [80]
+    }
+  },
   "soft_wrap": "editor_width",
   "buffer_font_features": {
     "calt": false
