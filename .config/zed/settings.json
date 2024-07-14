@@ -32,7 +32,7 @@
   "ui_font_size": 20,
   "buffer_font_size": 20,
   "scroll_sensitivity": 2,
-  "buffer_font_family": "Iosevka Term",
+  "buffer_font_family": "IosevkaTerm Nerd Font",
   "ui_font_family": "Iosevka Aile",
   "relative_line_numbers": true
 }
