@@ -2,3 +2,5 @@
 .config/github-copilot
 .config/jgit
 .config/neofetch
+.config/zed/embeddings
+.config/zed/prompts
