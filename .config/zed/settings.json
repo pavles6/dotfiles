@@ -10,6 +10,9 @@
   "confirm_quit": true,
   "terminal": {
     "dock": "right",
+    "env": {
+      "EDITOR": "zed --wait"
+    },
     "font_family": "IosevkaTerm Nerd Font"
   },
   "tabs": {
