@@ -4,3 +4,4 @@
 .config/neofetch
 .config/zed/embeddings
 .config/zed/prompts
+.DS_Store
