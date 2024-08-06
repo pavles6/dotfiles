@@ -2,10 +2,10 @@
   "theme": "One Dark - Darkened",
   "soft_wrap": "editor_width",
   "vim_mode": true,
-  "ui_font_size": 20,
-  "buffer_font_size": 20,
-  "buffer_font_family": "IosevkaTerm Nerd Font",
   "ui_font_family": "Iosevka Aile",
+  "ui_font_size": 20,
+  "buffer_font_family": "IosevkaTerm Nerd Font",
+  "buffer_font_size": 20,
   "vertical_scroll_margin": 8,
   "confirm_quit": true,
   "terminal": {

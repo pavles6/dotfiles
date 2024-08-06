@@ -4,3 +4,6 @@
 .config/neofetch
 .config/zed/embeddings
 .config/zed/prompts
+.DS_Store
+fonts/Iosevka\ Aile
+fonts/IosevkaTerm\ Nerd\ Font.ttf
