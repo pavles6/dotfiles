@@ -1,7 +1,7 @@
-romkatv/powerlevel10k
-jeffreytse/zsh-vi-mode
-zsh-users/zsh-syntax-highlighting
-zsh-users/zsh-completions
-zsh-users/zsh-autosuggestions
-Aloxaf/fzf-tab
-ohmyzsh/ohmyzsh kind:zsh path:plugins/git
+zsh-syntax-highlighting
+zsh-vi-mode
+zsh-completions
+zsh-autosuggestions
+starship
+font-iosevka-term-nerd-font
+font-iosevka-aile

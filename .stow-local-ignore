@@ -3,3 +3,5 @@ README.md
 .gitignore
 fonts
 .DS_Store
+install-plugins.sh
+.zsh_plugins.txt

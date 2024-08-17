@@ -1,19 +1,37 @@
-if [ ! -d $HOME/.antidote ]; then
-    git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
+# Add Homebrew packages to PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Initialize fzf
+eval "$(fzf --zsh)"
+
+# get fzf-tab
+if [[ ! -d "$HOME/.zsh/fzf-tab" ]]; then
+    mkdir -p "~/.zsh/fzf-tab"
+    git clone https://github.com/Aloxaf/fzf-tab ~/.zsh/fzf-tab
 fi
 
+# load fzf-tab
+source ~/.zsh/fzf-tab/fzf-tab.plugin.zsh
+
 # Load auto-completions
-autoload -U compinit && compinit
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-source ~/.antidote/antidote.zsh
+  autoload -Uz compinit
+  compinit
+fi
 
-antidote load
+# load zsh plugins
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
-source ~/.p10k.zsh
+# load git snippets
+source "$HOME/.zsh/git-snippets/git-snippets.plugin.zsh"
 
 # Keybindings
-bindkey '^j' history-search-backward
-bindkey '^k' history-search-forward
+bindkey '^n' history-search-backward
+bindkey '^p' history-search-forward
 bindkey '^F' autosuggest-accept
 
 # History
@@ -34,32 +52,13 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
-# Add Homebrew packages to PATH
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Initialize fzf
-eval "$(fzf --zsh)"
-
-alias ls='ls --color'
-
-# Source ~/.zshrc
-alias reload="exec zsh"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export ZVM_VI_EDITOR='zed'
-
-# Local stuff
-
+# load local stuff
 if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
 
-preexec() { print -Pn "\e]0;$1%~\a" }
-
 alias clear='clear -x'
-alias vim='nvim'
+alias ls='ls --color'
+alias reload="exec zsh"
 
-echo $(whoami)
+eval "$(starship init zsh)"

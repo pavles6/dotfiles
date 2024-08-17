@@ -5,6 +5,7 @@
 .config/zed/embeddings
 .config/zed/prompts
 .config/zed/conversations
+.config/zed/.tmp*
 .DS_Store
 fonts/Iosevka\ Aile
 fonts/IosevkaTerm\ Nerd\ Font.ttf
