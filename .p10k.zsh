@@ -38,14 +38,14 @@
   [[ $ZSH_VERSION == (5.<1->*|<6->.*) ]] || return
 
   # Prompt colors.
-  local grey='#767676'
-  local red='#d86868'
-  local yellow='#b99353'
-  local blue='#8eccdd'
-  local magenta='#b98eb2'
-  local cyan='#7c9cae'
-  local white='#cccccc'
-  local green='#83a471'
+  local grey='#787c85'
+  local red='#d07277'
+  local yellow='#dec184'
+  local blue='#6eb4bf'
+  local magenta='#b477cf'
+  local cyan='#6eb4bf'
+  local white='#acb2be'
+  local green='#a1c181'
 
   # Left prompt segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
@@ -107,7 +107,7 @@
   # Don't show context unless root or in SSH.
   typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_CONTENT_EXPANSION=
 
-  # Show previous command duration only if it's >= 5s.
+  # Show previous command duration only if it's >= .5s.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0.5
   # Don't show fractional seconds. Thus, 7s rather than 7.3s.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=2
