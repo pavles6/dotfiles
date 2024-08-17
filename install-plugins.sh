@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-PACKAGE_FILE=".zsh_plugins.txt"
+PACKAGE_FILE="plugins.txt"
 
 while IFS= read -r package; do
     # Check if the package is already installed

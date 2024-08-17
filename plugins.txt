@@ -9,3 +9,4 @@ stow
 alacritty
 font-iosevka-term-nerd-font
 font-iosevka-aile
+zoxide

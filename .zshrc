@@ -61,4 +61,10 @@ alias clear='clear -x'
 alias ls='ls --color'
 alias reload="exec zsh"
 
+# initialize zoxide
+eval "$(zoxide init zsh)"
+
+alias cd="z"
+
+# initialize starship
 eval "$(starship init zsh)"

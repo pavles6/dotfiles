@@ -3,4 +3,4 @@ README.md
 .gitignore
 .DS_Store
 install-plugins.sh
-.zsh_plugins.txt
+plugins.txt
