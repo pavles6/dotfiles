@@ -3,5 +3,9 @@ zsh-vi-mode
 zsh-completions
 zsh-autosuggestions
 starship
+fzf
+zed
+stow
+alacritty
 font-iosevka-term-nerd-font
 font-iosevka-aile
