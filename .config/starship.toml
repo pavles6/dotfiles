@@ -6,10 +6,13 @@ $git_branch\
 $git_state\
 $git_status\
 $line_break\
-$python\
 $character"""
 
-right_format = "$cmd_duration"
+right_format = """
+$cmd_duration\
+$python"""
+
+add_newline = false
 
 [directory]
 style = "blue"
