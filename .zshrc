@@ -21,6 +21,10 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+# enable editing command with vim
+autoload -U edit-command-line && zle -N edit-command-line
+bindkey '^x^e' edit-command-line
+
 # load zsh plugins
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
