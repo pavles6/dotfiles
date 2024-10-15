@@ -7,14 +7,15 @@
     "version": "2"
   },
   "theme": "One Dark - Darkened",
+  "when_closing_with_no_tabs": "keep_window_open",
   "soft_wrap": "editor_width",
   "vim_mode": true,
-  "ui_font_family": "Iosevka Aile",
+  "ui_font_family": "SF Compact",
   "ui_font_size": 20,
   "buffer_font_family": "IosevkaTerm Nerd Font",
   "buffer_font_size": 20,
   "buffer_line_height": "comfortable",
-  "vertical_scroll_margin": 8,
+  "vertical_scroll_margin": 10,
   "confirm_quit": true,
   "terminal": {
     "dock": "right",

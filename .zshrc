@@ -24,7 +24,6 @@ fi
 # load zsh plugins
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # load git snippets
 source "$HOME/.zsh/git-snippets/git-snippets.plugin.zsh"
@@ -58,7 +57,7 @@ if [ -f ~/.localrc ]; then
 fi
 
 alias clear='clear -x'
-alias ls='ls --color'
+alias ls='ls -al --color'
 alias reload="exec zsh"
 
 # initialize zoxide
@@ -66,5 +65,4 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 
-# initialize starship
-eval "$(starship init zsh)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"

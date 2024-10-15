@@ -1,8 +1,6 @@
 zsh-syntax-highlighting
-zsh-vi-mode
 zsh-completions
 zsh-autosuggestions
-starship
 fzf
 zed
 stow
@@ -11,3 +9,5 @@ font-iosevka-term-nerd-font
 font-iosevka-aile
 zoxide
 gh
+zellij
+jandedobbeleer/oh-my-posh/oh-my-posh
