@@ -5,7 +5,7 @@ blur = true
 
 [font]
 normal.family = "IosevkaTerm Nerd Font"
-normal.style = "Regular"
+normal.style = "Light"
 size = 20
 
 [scrolling]
