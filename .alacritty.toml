@@ -7,6 +7,9 @@ blur = true
 normal.family = "IosevkaTerm Nerd Font"
 normal.style = "Light"
 size = 20
+offset.x = 0
+offset.y = 1
+
 
 [scrolling]
 history = 10000
