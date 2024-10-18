@@ -5,8 +5,8 @@ fzf
 zed
 stow
 alacritty
-font-iosevka-term-nerd-font
-font-iosevka-aile
+font-jetbrains-mono-nerd-font
+font-sf-compact
 zoxide
 gh
 zellij

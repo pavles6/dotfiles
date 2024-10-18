@@ -1,30 +1,10 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
   {
-    "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
-    }
-  },
-  {
-    "context": "Dock",
-    "bindings": {
-      "ctrl-w h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"]
+      "ctrl-p h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-p l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-p k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-p j": ["workspace::ActivatePaneInDirection", "Down"]
     }
   },
   {
@@ -41,7 +21,8 @@
   {
     "context": "Editor && inline_completion && !showing_completions",
     "bindings": {
-      "ctrl-f": "editor::AcceptInlineCompletion"
+      "ctrl-f": "editor::AcceptInlineCompletion",
+      "tab": "editor::Tab"
     }
   }
 ]

@@ -12,9 +12,11 @@
   "vim_mode": true,
   "ui_font_family": "SF Compact",
   "ui_font_size": 20,
-  "buffer_font_family": "IosevkaTerm Nerd Font",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 20,
-  "buffer_line_height": "comfortable",
+  "buffer_line_height": {
+    "custom": 1.5
+  },
   "vertical_scroll_margin": 10,
   "confirm_quit": true,
   "terminal": {
@@ -22,7 +24,7 @@
     "env": {
       "EDITOR": "zed --wait"
     },
-    "font_family": "IosevkaTerm Nerd Font"
+    "font_family": "JetBrainsMono Nerd Font"
   },
   "tabs": {
     "file_icons": true,
