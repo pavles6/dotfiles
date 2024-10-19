@@ -70,3 +70,5 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+
+export EDITOR=nvim
