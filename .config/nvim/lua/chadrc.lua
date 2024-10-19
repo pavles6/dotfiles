@@ -6,7 +6,8 @@
 local M = {}
 
 M.base46 = {
-    theme = "decay",
+    theme = "onedark",
+    transparency = true
 
 
     -- hl_override = {
