@@ -7,6 +7,7 @@ blur = true
 normal.family = "JetBrainsMono Nerd Font"
 normal.style = "Light"
 size = 20
+offset.y = 1
 
 [scrolling]
 history = 10000
