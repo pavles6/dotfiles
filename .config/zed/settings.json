@@ -6,6 +6,11 @@
     },
     "version": "2"
   },
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true
+    }
+  },
   "theme": "One Dark - Darkened",
   "when_closing_with_no_tabs": "keep_window_open",
   "soft_wrap": "editor_width",

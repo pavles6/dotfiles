@@ -1,6 +1,6 @@
 [
   {
-    "context": "Pane",
+    "context": "Pane || ProjectPanel",
     "bindings": {
       "ctrl-p h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-p l": ["workspace::ActivatePaneInDirection", "Right"],
