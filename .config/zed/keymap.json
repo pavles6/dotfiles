@@ -1,14 +1,5 @@
 [
   {
-    "context": "Pane || ProjectPanel",
-    "bindings": {
-      "ctrl-p h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-p l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-p k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-p j": ["workspace::ActivatePaneInDirection", "Down"]
-    }
-  },
-  {
     "context": "vim_mode == visual",
     "bindings": {
       "shift-s": [

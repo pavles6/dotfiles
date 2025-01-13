@@ -22,7 +22,7 @@
   "buffer_line_height": {
     "custom": 1.5
   },
-  "vertical_scroll_margin": 10,
+  "vertical_scroll_margin": 15,
   "confirm_quit": true,
   "terminal": {
     "dock": "right",
@@ -33,7 +33,8 @@
   },
   "tabs": {
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
+    "show_diagnostics": "errors"
   },
   "project_panel": {
     "dock": "right",
