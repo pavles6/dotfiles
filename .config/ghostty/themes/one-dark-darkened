@@ -2,7 +2,7 @@ palette = 0=#1e2127
 palette = 1=#e06c75
 palette = 2=#98c379
 palette = 3=#d19a66
-palette = 4=#61afef
+palette = 4=#5fd7ff
 palette = 5=#c678dd
 palette = 6=#56b6c2
 palette = 7=#abb2bf
@@ -19,3 +19,8 @@ foreground = d8d8d8
 cursor-color = d8d8d8
 selection-background = d8d8d8
 selection-foreground = 181818
+font-family="JetBrainsMono Nerd Font"
+font-style="bold"
+font-size=20
+background-blur-radius=15
+background-opacity=0.85

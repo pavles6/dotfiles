@@ -1,12 +1,8 @@
-font-family="JetBrainsMono Nerd Font"
-font-style="bold"
-font-size=20
-window-padding-x=10
-background-blur-radius=15
-background-opacity=0.85
 cursor-style="block"
 shell-integration-features = "no-cursor"
 window-theme="dark"
-macos-titlebar-style="native"
+macos-titlebar-style="transparent"
 macos-titlebar-proxy-icon="hidden"
 theme="one-dark-darkened"
+title="🚀 Ghostty"
+window-title-font-family="SF Pro Display SemiBold"
