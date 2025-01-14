@@ -4,7 +4,7 @@ zsh-autosuggestions
 fzf
 zed
 stow
---cask ghostty
+ghostty
 font-jetbrains-mono-nerd-font
 font-sf-compact
 zoxide

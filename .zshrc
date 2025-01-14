@@ -69,6 +69,8 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 
+alias y="yazi"
+
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 export EDITOR=nvim
@@ -76,5 +78,5 @@ export EDITOR=nvim
 set -o emacs
 
 autoload -U edit-command-line
-zle -N edit-command-line 
+zle -N edit-command-line
 bindkey -M vicmd v edit-command-line

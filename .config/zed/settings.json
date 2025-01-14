@@ -4,6 +4,7 @@
       "provider": "copilot_chat",
       "model": "gpt-4o"
     },
+    "button": false,
     "version": "2"
   },
   "git": {
