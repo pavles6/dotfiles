@@ -51,6 +51,6 @@
     "diagnostics": false
   },
   "vim": {
-    "use_system_clipboard": "never"
+    "use_system_clipboard": "always"
   }
 }
