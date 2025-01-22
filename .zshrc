@@ -21,6 +21,8 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+set -o emacs
+
 # enable editing command with vim
 autoload -U edit-command-line && zle -N edit-command-line
 bindkey '^x^e' edit-command-line
@@ -74,9 +76,3 @@ alias y="yazi"
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 export EDITOR=nvim
-
-set -o emacs
-
-autoload -U edit-command-line
-zle -N edit-command-line
-bindkey -M vicmd v edit-command-line

@@ -11,6 +11,25 @@
     }
   },
   {
+    "context": "VimControl && !menu && vim_mode != operator",
+    "bindings": {
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordStart",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-shift-d": ["vim::PushOperator", "Delete"],
+      "ctrl-shift-x": "vim::DeleteRight",
+      "d d": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d d"],
+      "x": ["workspace::SendKeystrokes", "\" _ ctrl-shift-x"],
+      "d i w": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d i w"]
+    }
+  },
+  {
     "context": "Editor && inline_completion && !showing_completions",
     "bindings": {
       "ctrl-f": "editor::AcceptInlineCompletion",
