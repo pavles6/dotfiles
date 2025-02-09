@@ -1,5 +1,15 @@
 {
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Catppuccin Mocha",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "theme": "One Dark - Darkened",
+  "ui_font_family": "SF Compact",
+  "when_closing_with_no_tabs": "keep_window_open",
+  "soft_wrap": "editor_width",
+  "vim_mode": true,
+  "confirm_quit": true,
+  "ui_font_size": 20,
+  "buffer_font_size": 20,
+  "vertical_scroll_margin": 15,
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
@@ -13,19 +23,9 @@
       "show_commit_summary": true
     }
   },
-  "theme": "One Dark - Darkened",
-  "when_closing_with_no_tabs": "keep_window_open",
-  "soft_wrap": "editor_width",
-  "vim_mode": true,
-  "ui_font_family": "SF Compact",
-  "ui_font_size": 20,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 20,
   "buffer_line_height": {
     "custom": 1.5
   },
-  "vertical_scroll_margin": 15,
-  "confirm_quit": true,
   "terminal": {
     "dock": "right",
     "env": {

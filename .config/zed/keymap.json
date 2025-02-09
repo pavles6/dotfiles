@@ -1,5 +1,16 @@
 [
   {
+    // global overrides
+    "bindings": {
+      "cmd-shift-f": null,
+      "cmd-shift-p": null,
+      "cmd-shift-r": null,
+      "cmd-shift-o": null,
+      "cmd-p": null,
+      "cmd-r": null
+    }
+  },
+  {
     "context": "vim_mode == visual",
     "bindings": {
       "shift-s": [
@@ -34,6 +45,24 @@
     "bindings": {
       "ctrl-f": "editor::AcceptInlineCompletion",
       "tab": "editor::Tab"
+    }
+  },
+  {
+    "context": "Workspace || vim_mode == normal || ProjectPanel",
+    "bindings": {
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-n": "workspace::ToggleRightDock",
+      "space e": "project_panel::ToggleFocus",
+      "space a": "assistant::ToggleFocus",
+      "space o": "outline::Toggle",
+      "space f g": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "n ": "editor::MoveLineDown",
+      "p": "editor::MoveLineUp"
     }
   }
 ]
