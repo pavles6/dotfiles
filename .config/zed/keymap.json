@@ -7,7 +7,9 @@
       "cmd-shift-r": null,
       "cmd-shift-o": null,
       "cmd-p": null,
-      "cmd-r": null
+      "cmd-r": null,
+      "cmd-s": null,
+      "cmd-shift-e": null
     }
   },
   {
@@ -48,14 +50,15 @@
     }
   },
   {
-    "context": "Workspace || vim_mode == normal || ProjectPanel",
+    "context": "Editor && vim_mode == normal",
     "bindings": {
       "ctrl-p": "file_finder::Toggle",
       "ctrl-n": "workspace::ToggleRightDock",
       "space e": "project_panel::ToggleFocus",
       "space a": "assistant::ToggleFocus",
       "space o": "outline::Toggle",
-      "space f g": "pane::DeploySearch"
+      "space f": "pane::DeploySearch",
+      "space x": "zed::Extensions"
     }
   },
   {
