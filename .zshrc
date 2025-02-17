@@ -1,21 +1,32 @@
 # Add Homebrew packages to PATH
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ "$(uname)" == "Darwin" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 
 # Initialize fzf
 eval "$(fzf --zsh)"
 
 # get fzf-tab
 if [[ ! -d "$HOME/.zsh/fzf-tab" ]]; then
-    mkdir -p "~/.zsh/fzf-tab"
-    git clone https://github.com/Aloxaf/fzf-tab ~/.zsh/fzf-tab
+  mkdir -p "~/.zsh/fzf-tab"
+  git clone https://github.com/Aloxaf/fzf-tab ~/.zsh/fzf-tab
 fi
 
 # load fzf-tab
 source ~/.zsh/fzf-tab/fzf-tab.plugin.zsh
 
 # Load auto-completions
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+if [[ "$(uname)" == "Darwin" ]]; then
+  if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+  fi
+elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
+  FPATH="/home/linuxbrew/.linuxbrew/share/zsh-completions:$FPATH"
 
   autoload -Uz compinit
   compinit
@@ -27,10 +38,14 @@ set -o emacs
 autoload -U edit-command-line && zle -N edit-command-line
 bindkey '^x^e' edit-command-line
 
-# load zsh plugins
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+if [[ "$(uname)" == "Darwin" ]]; then
+  # load zsh plugins
+  source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
+  source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 # load git snippets
 source "$HOME/.zsh/git-snippets/git-snippets.plugin.zsh"
 
