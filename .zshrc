@@ -46,6 +46,13 @@ elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
   source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
+
+# clipboard aliases for linux (ubuntu)
+if [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+fi
+
 # load git snippets
 source "$HOME/.zsh/git-snippets/git-snippets.plugin.zsh"
 
@@ -79,7 +86,7 @@ fi
 
 alias clear='clear -x'
 alias ls='ls -al --color'
-alias reload="exec zsh"
+alias reload="source ~/.zshrc"
 
 # initialize zoxide
 eval "$(zoxide init zsh)"
@@ -91,3 +98,18 @@ alias y="yazi"
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 export EDITOR=nvim
+
+if [[ -z "$ZELLIJ" ]]; then
+    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+        zellij attach fabulous-mountain
+    else
+        zellij attach fabulous-mountain
+    fi
+
+    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+        exit
+    fi
+fi
+
+# add zen to PATH
+export PATH="$PATH:~/.local/share/applications"
