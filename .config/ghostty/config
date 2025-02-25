@@ -7,5 +7,4 @@ theme="catppuccin-mocha"
 window-title-font-family="SF Pro Display SemiBold"
 font-family="JetBrainsMono Nerd Font"
 font-size=15
-background-blur-radius=15
-background-opacity=0.90
+background-opacity=1
