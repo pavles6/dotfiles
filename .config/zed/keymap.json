@@ -15,12 +15,7 @@
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "shift-s": [
-        "vim::PushOperator",
-        {
-          "AddSurrounds": {}
-        }
-      ]
+      "shift-s": ["vim::PushAddSurrounds", {}]
     }
   },
   {
@@ -33,19 +28,9 @@
     }
   },
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Editor && edit_prediction && !showing_completions",
     "bindings": {
-      "ctrl-shift-d": ["vim::PushOperator", "Delete"],
-      "ctrl-shift-x": "vim::DeleteRight",
-      "d d": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d d"],
-      "x": ["workspace::SendKeystrokes", "\" _ ctrl-shift-x"],
-      "d i w": ["workspace::SendKeystrokes", "\" _ ctrl-shift-d i w"]
-    }
-  },
-  {
-    "context": "Editor && inline_completion && !showing_completions",
-    "bindings": {
-      "ctrl-f": "editor::AcceptInlineCompletion",
+      "ctrl-f": "editor::AcceptEditPrediction",
       "tab": "editor::Tab"
     }
   },
@@ -53,7 +38,9 @@
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "ctrl-p": "file_finder::Toggle",
-      "ctrl-n": "workspace::ToggleRightDock",
+      "ctrl-r": "workspace::ToggleRightDock",
+      "ctrl-b": "workspace::ToggleLeftDock",
+      "space g": "git_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
       "space a": "assistant::ToggleFocus",
       "space o": "outline::Toggle",
@@ -64,8 +51,20 @@
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
-      "n ": "editor::MoveLineDown",
-      "p": "editor::MoveLineUp"
+      "alt-n": "editor::MoveLineDown",
+      "alt-p": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space ,": "tab_switcher::Toggle"
     }
   }
 ]
