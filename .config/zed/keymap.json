@@ -6,10 +6,10 @@
       "cmd-shift-p": null,
       "cmd-shift-r": null,
       "cmd-shift-o": null,
-      "cmd-p": null,
-      "cmd-r": null,
+      "cmd-shift-e": null,
       "cmd-s": null,
-      "cmd-shift-e": null
+      "shift-p": null,
+      "shift-n": null
     }
   },
   {
@@ -37,34 +37,26 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "ctrl-p": "file_finder::Toggle",
-      "ctrl-r": "workspace::ToggleRightDock",
-      "ctrl-b": "workspace::ToggleLeftDock",
+      "cmd-r": "workspace::ToggleRightDock",
+      "alt-r": "workspace::ToggleRightDock",
+      "cmd-b": "workspace::ToggleLeftDock",
+      "alt-b": "workspace::ToggleLeftDock",
+      "space p": "file_finder::Toggle",
       "space g": "git_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
       "space a": "assistant::ToggleFocus",
       "space o": "outline::Toggle",
       "space f": "pane::DeploySearch",
-      "space x": "zed::Extensions"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == visual",
-    "bindings": {
-      "alt-n": "editor::MoveLineDown",
-      "alt-p": "editor::MoveLineUp"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == visual",
-    "bindings": {
-      "ctrl-a": "editor::SelectAll"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == normal",
-    "bindings": {
+      "space x": "zed::Extensions",
       "space ,": "tab_switcher::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "shift-n": "editor::MoveLineDown",
+      "shift-p": "editor::MoveLineUp",
+      "ctrl-a": "editor::SelectAll"
     }
   }
 ]
