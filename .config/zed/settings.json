@@ -11,9 +11,10 @@
   "buffer_font_size": 20,
   "vertical_scroll_margin": 15,
   "assistant": {
+    "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "model": "claude-3-7-sonnet"
     },
     "button": false,
     "version": "2"
