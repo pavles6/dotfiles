@@ -2,7 +2,7 @@
   "icon_theme": "Catppuccin Mocha",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "theme": "One Dark - Darkened",
-  "ui_font_family": "SF Compact",
+  "ui_font_family": "SF Compact Display",
   "when_closing_with_no_tabs": "keep_window_open",
   "soft_wrap": "editor_width",
   "vim_mode": true,

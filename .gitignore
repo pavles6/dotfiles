@@ -7,3 +7,4 @@
 .config/zed/conversations
 .config/zed/.tmp*
 .DS_Store
+.zsh/fzf-tab
