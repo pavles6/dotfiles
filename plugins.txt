@@ -12,3 +12,4 @@ gh
 zellij
 jandedobbeleer/oh-my-posh/oh-my-posh
 neovim
+television

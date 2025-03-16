@@ -13,6 +13,15 @@
     }
   },
   {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w": null,
+      "ctrl-n": null,
+      "ctrl-p": null,
+      "ctrl-t": null
+    }
+  },
+  {
     "context": "vim_mode == visual",
     "bindings": {
       "shift-s": ["vim::PushAddSurrounds", {}]
@@ -42,11 +51,17 @@
       "cmd-b": "workspace::ToggleLeftDock",
       "alt-b": "workspace::ToggleLeftDock",
       "space p": "file_finder::Toggle",
+      "space f": [
+        "task::Spawn",
+        {
+          "task_name": "file_finder",
+          "reveal_target": "center"
+        }
+      ],
       "space g": "git_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
       "space a": "assistant::ToggleFocus",
       "space o": "outline::Toggle",
-      "space f": "pane::DeploySearch",
       "space x": "zed::Extensions",
       "space ,": "tab_switcher::Toggle"
     }
