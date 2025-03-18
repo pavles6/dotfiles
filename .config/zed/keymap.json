@@ -7,9 +7,7 @@
       "cmd-shift-r": null,
       "cmd-shift-o": null,
       "cmd-shift-e": null,
-      "cmd-s": null,
-      "shift-p": null,
-      "shift-n": null
+      "cmd-s": null
     }
   },
   {
@@ -46,7 +44,8 @@
       "space e": "project_panel::ToggleFocus",
       "space a": "assistant::ToggleFocus",
       "space o": "outline::Toggle",
-      "space f": "pane::DeploySearch",
+      "space f": "vim::Search",
+      "space F": "pane::DeploySearch",
       "space x": "zed::Extensions",
       "space ,": "tab_switcher::Toggle"
     }
