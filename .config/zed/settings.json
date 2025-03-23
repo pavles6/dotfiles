@@ -60,5 +60,11 @@
   "vim": {
     "use_smartcase_find": true,
     "use_system_clipboard": "always"
+  },
+  "command_aliases": {
+    "gl": "git: pull",
+    "W": "w",
+    "Q": "q",
+    "Wq": "wq"
   }
 }
