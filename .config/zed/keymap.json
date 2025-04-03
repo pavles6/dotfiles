@@ -1,16 +1,5 @@
 [
   {
-    // global overrides
-    "bindings": {
-      "cmd-shift-f": null,
-      "cmd-shift-p": null,
-      "cmd-shift-r": null,
-      "cmd-shift-o": null,
-      "cmd-shift-e": null,
-      "cmd-s": null
-    }
-  },
-  {
     "context": "vim_mode == visual",
     "bindings": {
       "shift-s": ["vim::PushAddSurrounds", {}]
@@ -44,10 +33,9 @@
       "space e": "project_panel::ToggleFocus",
       "space a": "assistant::ToggleFocus",
       "space o": "outline::Toggle",
-      "space f": "vim::Search",
       "space F": "pane::DeploySearch",
       "space x": "zed::Extensions",
-      "space ,": "tab_switcher::Toggle"
+      "space t": "tab_switcher::Toggle"
     }
   },
   {
