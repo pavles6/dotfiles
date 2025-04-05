@@ -2,11 +2,7 @@ zsh-syntax-highlighting
 zsh-completions
 zsh-autosuggestions
 fzf
-zed
 stow
-ghostty
-font-jetbrains-mono-nerd-font
-font-sf-compact
 zoxide
 gh
 zellij

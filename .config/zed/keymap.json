@@ -35,7 +35,7 @@
       "space o": "outline::Toggle",
       "space F": "pane::DeploySearch",
       "space x": "zed::Extensions",
-      "space t": "tab_switcher::Toggle"
+      "space ,": "tab_switcher::Toggle"
     }
   },
   {
