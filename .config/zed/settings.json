@@ -11,6 +11,7 @@
   "buffer_font_size": 20,
   "vertical_scroll_margin": 15,
   "use_system_prompts": false,
+  "hide_mouse": "on_typing_and_movement",
   "assistant": {
     "dock": "left",
     "default_model": {
