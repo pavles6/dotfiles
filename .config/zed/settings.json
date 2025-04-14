@@ -12,13 +12,16 @@
   "vertical_scroll_margin": 15,
   "use_system_prompts": false,
   "hide_mouse": "on_typing_and_movement",
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
   "assistant": {
     "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-3-7-sonnet"
     },
-    "button": false,
+    "button": true,
     "version": "2"
   },
   "inlay_hints": {
