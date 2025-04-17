@@ -1,6 +1,6 @@
 {
   "icon_theme": "Catppuccin Mocha",
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "theme": "One Dark - Darkened",
   "ui_font_family": "SF Compact Display",
   "when_closing_with_no_tabs": "keep_window_open",
@@ -16,12 +16,12 @@
     "edit_prediction_provider": "copilot"
   },
   "assistant": {
+    "default_width": 620,
     "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-3-7-sonnet"
     },
-    "button": true,
     "version": "2"
   },
   "inlay_hints": {
@@ -46,6 +46,7 @@
     "show_diagnostics": "errors"
   },
   "project_panel": {
+    "default_width": 620,
     "dock": "right",
     "scrollbar": {
       "show": "always"
