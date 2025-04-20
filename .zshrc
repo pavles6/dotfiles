@@ -2,10 +2,9 @@
 
 PLATFORM=$(uname)
 
+# load homebrew binaries on mac
 if [[ $PLATFORM == "Darwin" ]]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
-  elif [[ $PLATFORM =~ ^Linux ]]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 # Initialize fzf
@@ -22,41 +21,32 @@ source "$HOME/.zsh/fzf-tab/fzf-tab.plugin.zsh"
 
 # Load auto-completions
 if [[ $PLATFORM == "Darwin" ]]; then
-  if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-    autoload -Uz compinit
-    compinit
-  fi
+    if type brew &>/dev/null; then
+        FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    fi
 elif [[ $PLATFORM =~ ^Linux ]]; then
-  FPATH="/home/linuxbrew/.linuxbrew/share/zsh-completions:$FPATH"
-
-  autoload -Uz compinit
-  compinit
+    FPATH="/usr/share/zsh/site-functions/:$FPATH"
 fi
+autoload -Uz compinit
+compinit
 
+# use emacs keybindings in terminal
 set -o emacs
 
-# enable editing command with vim
+# enable editing cmdline with vim
 autoload -U edit-command-line && zle -N edit-command-line
 bindkey '^x^e' edit-command-line
 
+# load zsh autosuggestions and syntax highlighting
 if [[ $PLATFORM == "Darwin" ]]; then
-  # load zsh plugins
-  source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-  source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    ZSH_PLUGIN_PATH=$(brew --prefix)/share
 elif [[ $PLATFORM =~ ^Linux ]]; then
-  source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-  source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    ZSH_PLUGIN_PATH="/usr/share/zsh/plugins"
 fi
+source $ZSH_PLUGIN_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_PLUGIN_PATH/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# clipboard aliases for linux (ubuntu)
-if [[ $PLATFORM =~ ^Linux ]]; then
-  alias pbcopy='xclip -selection clipboard'
-  alias pbpaste='xclip -selection clipboard -o'
-fi
-
-# load git snippets
+# load git command snippets
 source "$HOME/.zsh/git-snippets/git-snippets.plugin.zsh"
 
 # Keybindings
@@ -82,22 +72,22 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
-# load local stuff
+# load machine specific stuff
 if [ -f "$HOME/.localrc" ]; then
   source "$HOME/.localrc"
 fi
 
-alias clear='clear -x'
-alias ls='ls -al --color'
-alias reload="source $HOME/.zshrc"
-
 # initialize zoxide
 eval "$(zoxide init zsh)"
 
+# custom aliases
+alias clear='clear -x'
+alias ls='ls -al --color'
+alias reload="source $HOME/.zshrc"
 alias cd="z"
-
 alias y="yazi"
 
+# load oh-my-posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 export EDITOR=nvim

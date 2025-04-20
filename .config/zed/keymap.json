@@ -31,7 +31,7 @@
       "space p": "file_finder::Toggle",
       "space g": "git_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
-      "space a": "assistant::ToggleFocus",
+      "space a": "agent::NewTextThread",
       "space o": "outline::Toggle",
       "space F": "pane::DeploySearch",
       "space x": "zed::Extensions",
