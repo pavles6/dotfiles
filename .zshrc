@@ -91,3 +91,18 @@ alias y="yazi"
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 export EDITOR=nvim
+
+
+# run zellij on shell start
+export ZELLIJ_AUTO_ATTACH="true"
+if [[ -z "$ZELLIJ" ]]; then
+    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+        zellij attach -c $USER@$(/usr/lib/gettext/hostname)
+    else
+        zellij
+    fi
+
+    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+        exit
+    fi
+fi
