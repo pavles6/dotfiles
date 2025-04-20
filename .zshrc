@@ -97,7 +97,13 @@ export EDITOR=nvim
 export ZELLIJ_AUTO_ATTACH="true"
 if [[ -z "$ZELLIJ" ]]; then
     if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
-        zellij attach -c $USER@$(/usr/lib/gettext/hostname)
+        if [[ $PLATFORM == "Darwin" ]]; then
+            HOSTNAME=$(hostname)
+        elif [[ $PLATFORM =~ ^Linux ]]; then
+            HOSTNAME=$(/usr/lib/gettext/hostname)
+        fi
+
+        zellij attach -c $USER@$HOSTNAME
     else
         zellij
     fi
