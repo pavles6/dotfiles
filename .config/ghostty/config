@@ -9,3 +9,4 @@ font-family="JetBrainsMono Nerd Font"
 font-size=16
 background-opacity=1
 window-inherit-font-size=false
+confirm-close-surface=false
