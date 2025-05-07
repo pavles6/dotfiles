@@ -101,7 +101,7 @@ if [[ -z "$ZELLIJ" ]]; then
         HOSTNAME=$(/usr/lib/gettext/hostname)
     fi
 
-    zellij attach -c $USER@$HOSTNAME
+    # zellij attach -c $USER@$HOSTNAME
 
     if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
         exit
