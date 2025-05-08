@@ -95,13 +95,9 @@ export EDITOR=nvim
 
 # run zellij on shell start
 if [[ -z "$ZELLIJ" ]]; then
-    if [[ $PLATFORM == "Darwin" ]]; then
-        HOSTNAME=$(hostname)
-    elif [[ $PLATFORM =~ ^Linux ]]; then
-        HOSTNAME=$(/usr/lib/gettext/hostname)
+    if [[ $TERM =~ "xterm-ghostty" ]]; then
+      zellij attach -c $USER@$HOST
     fi
-
-    # zellij attach -c $USER@$HOSTNAME
 
     if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
         exit
