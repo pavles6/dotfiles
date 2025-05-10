@@ -15,7 +15,7 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "assistant": {
+  "agent": {
     "default_width": 620,
     "dock": "left",
     "default_model": {
