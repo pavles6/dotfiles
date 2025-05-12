@@ -7,6 +7,14 @@ template = '❯❯ '
 foreground = 'magenta'
 background = 'transparent'
 
+[transient_prompt]
+template = '❯ '
+background = 'transparent'
+foreground_templates = [
+    '{{if gt .Code 0}}red{{end}}',
+    '{{if eq .Code 0}}magenta{{end}}',
+]
+
 [[blocks]]
 type = 'prompt'
 alignment = 'left'
@@ -49,7 +57,7 @@ style = 'plain'
 
 [blocks.segments.properties]
 cache_duration = 'none'
-threshold = 400
+threshold = 5000
 
 [[blocks]]
 type = 'prompt'

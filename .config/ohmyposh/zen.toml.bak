@@ -24,7 +24,7 @@ type = 'git'
 style = 'plain'
 foreground = 'p:grey'
 background = 'transparent'
-template = ' <darkGray>{{ .HEAD }} </><cyan>{{ if (.Working.Changed) }}*{{ end }}{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}{{if gt .StashCount 0 }}≡{{ end }}</>'
+template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>'
 
 [blocks.segments.properties]
 branch_icon = ''
@@ -43,7 +43,7 @@ background = 'transparent'
 template = '{{ .FormattedMs }}'
 
 [blocks.segments.properties]
-threshold = 400
+threshold = 5000
 
 [[blocks]]
 type = 'prompt'
