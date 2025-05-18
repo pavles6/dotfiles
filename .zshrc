@@ -95,7 +95,7 @@ export EDITOR=nvim
 
 # run zellij on shell start
 if [[ -z "$ZELLIJ" ]]; then
-    if [[ $TERM =~ "xterm-ghostty" ]]; then
+    if [[ $TERM =~ "alacritty" ]]; then
       zellij attach -c $USER@$HOST
     fi
 
