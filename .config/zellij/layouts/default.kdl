@@ -1,6 +1,5 @@
 layout {
   default_tab_template {
-    children
     pane size=2 borderless=true {
       plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
         mode_normal        "#[bg=blue,fg=#000000,bold] NORMAL "
@@ -28,7 +27,7 @@ layout {
         border_enabled  "true"
         border_char     "─"
         border_format   "#[fg=#6C7086]{char}"
-        border_position "top"
+        border_position "bottom"
 
         hide_frame_for_single_pane "false"
 
@@ -40,5 +39,6 @@ layout {
         datetime_timezone "Europe/Belgrade"
       }
     }
+    children
   }
 }
