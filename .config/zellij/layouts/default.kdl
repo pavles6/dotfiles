@@ -24,7 +24,7 @@ layout {
         format_right  "{datetime}"
         format_space  ""
 
-        border_enabled  "true"
+        border_enabled  "false"
         border_char     "─"
         border_format   "#[fg=#6C7086]{char}"
         border_position "bottom"
