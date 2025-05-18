@@ -1,0 +1,44 @@
+layout {
+  default_tab_template {
+    children
+    pane size=1 borderless=true {
+      plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+        mode_normal        "#[bg=blue,fg=#000000,bold] NORMAL "
+        mode_locked        "#[bg=red,fg=#000000,bold] LOCKED "
+        mode_resize        "#[bg=cyan,fg=#000000,bold] RESIZE "
+        mode_pane          "#[bg=green,fg=#000000,bold] PANE "
+        mode_tab           "#[bg=yellow,fg=#000000,bold] TAB "
+        mode_scroll        "#[bg=magenta,fg=#000000,bold] SCROLL "
+        mode_enter_search  "#[bg=magenta,fg=#000000,bold] FIND... "
+        mode_search        "#[bg=magenta,fg=#000000,bold] FIND "
+        mode_rename_tab    "#[bg=yellow,fg=#000000,bold] RENAME TAB "
+        mode_rename_pane   "#[bg=green,fg=#000000,bold] RENAME PANE "
+        mode_session       "#[bg=cyan,fg=#000000,bold] SESSION "
+        mode_move          "#[bg=cyan,fg=#000000,bold] MOVE "
+        mode_prompt        "#[bg=blue,fg=#000000,bold] PROMPT "
+        mode_tmux          "#[bg=blue,fg=#000000,bold] TMUX "
+
+        mode_default_to_mode "tmux"
+
+        format_left   "{mode} #[fg=#89B4FA,bold]{session}"
+        format_center "{tabs}"
+        format_right  "{datetime}"
+        format_space  ""
+
+        border_enabled  "true"
+        border_char     "─"
+        border_format   "#[fg=#6C7086]{char}"
+        border_position "top"
+
+        hide_frame_for_single_pane "false"
+
+        tab_normal   "#[fg=#6C7086] {name} "
+        tab_active   "#[fg=#9399B2,bold,italic] {name} "
+
+        datetime        "#[fg=#6C7086,bold] {format} "
+        datetime_format "%A, %d %b %Y %H:%M"
+        datetime_timezone "Europe/Belgrade"
+      }
+    }
+  }
+}
