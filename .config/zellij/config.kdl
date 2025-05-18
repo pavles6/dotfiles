@@ -225,8 +225,8 @@ themes {
             emphasis_3 198 120 221
         }
         text_selected {
-            base 171 178 191
-            background 251 241 199
+            base 88 96 105
+            background 240 246 252
             emphasis_0 198 120 221
             emphasis_1 86 182 194
             emphasis_2 152 195 121
@@ -289,7 +289,7 @@ themes {
             emphasis_3 198 120 221
         }
         frame_selected {
-            base 152 195 121
+            base 52 208 88
             background 0
             emphasis_0 198 120 221
             emphasis_1 86 182 194
@@ -297,7 +297,7 @@ themes {
             emphasis_3 0
         }
         frame_highlight {
-            base 198 120 221
+            base 218 96 161
             background 0
             emphasis_0 198 120 221
             emphasis_1 198 120 221
@@ -360,9 +360,9 @@ plugins {
 load_plugins {
     "file:/home/pavles6/.config/zellij/plugins/zjframes.wasm" {
         hide_frame_except_for_fullscreen false
-        hide_frame_except_for_scroll false
+        hide_frame_except_for_scroll  false
         hide_frame_except_for_search false
-        hide_frame_for_single_pane false
+        hide_frame_for_single_pane  false
     }
 }
  
