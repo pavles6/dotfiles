@@ -5,6 +5,7 @@
 .config/zed/embeddings
 .config/zed/prompts
 .config/zed/conversations
+.config/.jira
 .config/zed/.tmp*
 .DS_Store
 .config/karabiner
