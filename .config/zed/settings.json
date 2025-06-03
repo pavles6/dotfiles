@@ -15,12 +15,13 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
+  "use_smartcase_search": true,
   "agent": {
     "default_width": 620,
     "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o4-mini"
+      "model": "gpt-4o"
     },
     "version": "2"
   },
