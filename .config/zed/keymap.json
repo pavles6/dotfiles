@@ -11,7 +11,8 @@
       "w": "vim::NextSubwordStart",
       "b": "vim::PreviousSubwordStart",
       "e": "vim::NextSubwordEnd",
-      "g e": "vim::PreviousSubwordEnd"
+      "g e": "vim::PreviousSubwordEnd",
+      "/": "buffer_search::Deploy"
     }
   },
   {
@@ -22,7 +23,7 @@
     }
   },
   {
-    "context": "AgentPanel || GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+    "context": "AgentPanel && not_editing && GitPanel && not_editing || ProjectPanel || CollabPanel || OutlinePanel && not_editing || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
     "bindings": {
       "cmd-r": "workspace::ToggleRightDock",
       "alt-r": "workspace::ToggleRightDock",
@@ -32,7 +33,9 @@
       "space g": "git_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
       "space a": "agent::NewTextThread",
+      "space A": "agent::ToggleFocus",
       "space o": "outline::Toggle",
+      "space O": "outline_panel::ToggleFocus",
       "space F": "pane::DeploySearch",
       "space x": "zed::Extensions",
       "space ,": "tab_switcher::Toggle"
