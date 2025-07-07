@@ -8,6 +8,4 @@
 .config/zed/.tmp*
 .DS_Store
 .zsh/fzf-tab
-.config/karabiner
-.config/.jira
 .config/gh
