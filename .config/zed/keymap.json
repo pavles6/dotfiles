@@ -23,12 +23,10 @@
     }
   },
   {
-    "context": "AgentPanel && not_editing && GitPanel && not_editing || ProjectPanel || CollabPanel || OutlinePanel && not_editing || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+    "context": "AgentPanel && not_editing || GitPanel && not_editing || ProjectPanel || CollabPanel || OutlinePanel && not_editing || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
     "bindings": {
-      "cmd-r": "workspace::ToggleRightDock",
-      "alt-r": "workspace::ToggleRightDock",
-      "cmd-b": "workspace::ToggleLeftDock",
-      "alt-b": "workspace::ToggleLeftDock",
+      "ctrl-w shift-l": "workspace::ToggleRightDock",
+      "ctrl-w shift-h": "workspace::ToggleLeftDock",
       "space p": "file_finder::Toggle",
       "space g": "git_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
