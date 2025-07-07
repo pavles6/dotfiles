@@ -5,6 +5,7 @@ macos-titlebar-style="transparent"
 macos-titlebar-proxy-icon="hidden"
 theme="GitHub Dark"
 window-title-font-family="SF Pro Display SemiBold"
+adjust-cell-height=2
 font-family="IosevkaTerm Nerd Font"
 font-size=21
 background-opacity=1
