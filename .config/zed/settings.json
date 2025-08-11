@@ -7,8 +7,9 @@
   "soft_wrap": "editor_width",
   "vim_mode": true,
   "confirm_quit": true,
-  "ui_font_size": 20,
-  "buffer_font_size": 20,
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
+  "agent_font_size": 18,
   "vertical_scroll_margin": 15,
   "use_system_prompts": false,
   "hide_mouse": "on_typing_and_movement",
@@ -17,13 +18,12 @@
   },
   "use_smartcase_search": true,
   "agent": {
-    "default_width": 620,
+    "default_profile": "ask",
     "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1"
-    },
-    "version": "2"
+    }
   },
   "inlay_hints": {
     "enabled": true
@@ -45,6 +45,9 @@
     "file_icons": true,
     "git_status": true,
     "show_diagnostics": "errors"
+  },
+  "git_panel": {
+    "collapse_untracked_diff": true
   },
   "project_panel": {
     "default_width": 620,
