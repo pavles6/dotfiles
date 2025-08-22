@@ -37,7 +37,9 @@
       "space g f": "pane::DeploySearch",
       "space g x": "zed::Extensions",
       "space g l": "git::Blame",
-      "space ,": "tab_switcher::Toggle"
+      "space ,": "tab_switcher::Toggle",
+      "space b": "workspace::ToggleLeftDock",
+      "space r": "workspace::ToggleRightDock"
     }
   },
   {
