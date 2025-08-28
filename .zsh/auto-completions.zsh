@@ -1,13 +1,4 @@
-PLATFORM=$(uname)
-
-# Load auto-completions
-if [[ $PLATFORM == "Darwin" ]]; then
-    if type brew &>/dev/null; then
-        FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-    fi
-elif [[ $PLATFORM =~ ^Linux ]]; then
-    FPATH="/usr/share/zsh/site-functions/:$FPATH"
-fi
+FPATH="/usr/share/zsh/site-functions/:$FPATH"
 autoload -Uz compinit
 compinit
 
