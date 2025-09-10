@@ -2,7 +2,7 @@
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "shift-s": ["vim::PushAddSurrounds", {}]
+      "s a": ["vim::PushAddSurrounds", {}]
     }
   },
   {
