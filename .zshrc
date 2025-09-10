@@ -20,14 +20,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Add Homebrew packages to PATH
-
 PLATFORM=$(uname)
-
-# load homebrew binaries on mac
-if [[ $PLATFORM == "Darwin" ]]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
 
 # Initialize fzf
 eval "$(fzf --zsh)"
