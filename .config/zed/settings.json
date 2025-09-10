@@ -2,7 +2,7 @@
   "icon_theme": "Catppuccin Mocha",
   "colorize_brackets": true,
   "buffer_font_family": "IosevkaTerm Nerd Font",
-  "theme": "One Dark - Darkened",
+  "theme": "Catppuccin Mocha - No Italics",
   "ui_font_family": "SF Compact Display",
   "when_closing_with_no_tabs": "keep_window_open",
   "soft_wrap": "editor_width",

@@ -5,36 +5,36 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-    {
-        "saghen/blink.cmp",
-        opts = {
-            keymap = {
-                preset = "enter",
-                ["<C-f>"] = { "select_and_accept", "accept" },
-            },
-        },
+  {
+    "saghen/blink.cmp",
+    opts = {
+      keymap = {
+        preset = "enter",
+        ["<C-f>"] = { "select_and_accept", "accept" },
+      },
     },
+  },
 
-    {
-        "nvim-telescope/telescope.nvim",
-        opts = {
-            pickers = {
-                defaults = {
-                    preview = {
-                        filesize_limit = 0.1,
-                    },
-                },
-                find_files = {
-                    -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
-                    find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
-                },
-            },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      pickers = {
+        defaults = {
+          preview = {
+            filesize_limit = 0.1,
+          },
         },
-    },
-    {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "catppuccin-mocha",
+        find_files = {
+          -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
+          find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
         },
+      },
     },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin-mocha",
+    },
+  },
 }
