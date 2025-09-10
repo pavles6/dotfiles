@@ -1,13 +1,6 @@
-.config/gcloud
-.config/github-copilot
-.config/jgit
-.config/neofetch
 .config/zed/embeddings
 .config/zed/prompts
 .config/zed/conversations
 .config/zed/.tmp*
-.DS_Store
-.config/karabiner
-.config/.jira
 .config/gh
 .config/nvim/lazy-lock.json
