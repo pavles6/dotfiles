@@ -1,3 +1,4 @@
+source "$HOME/.zsh/zellij-init.zsh"
 source "$HOME/.zsh/p10k.zsh"
 source "$HOME/.zsh/fzf.zsh"
 source "$HOME/.zsh/fzf-tab/fzf-tab.plugin.zsh"
@@ -13,6 +14,3 @@ source "$HOME/.zsh/aliases.zsh"
 if [ -f "$HOME/.localrc" ]; then
   source "$HOME/.localrc"
 fi
-
-# launch zellij
-source "$HOME/.zsh/zellij-init.zsh"
