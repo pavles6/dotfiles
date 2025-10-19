@@ -25,8 +25,8 @@
   {
     "context": "AgentPanel && not_editing || GitPanel && not_editing || ProjectPanel || CollabPanel || OutlinePanel && not_editing || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
     "bindings": {
-      "ctrl-w shift-l": "workspace::ToggleRightDock",
-      "ctrl-w shift-h": "workspace::ToggleLeftDock",
+      "alt-r": "workspace::ToggleRightDock",
+      "alt-b": "workspace::ToggleLeftDock",
       "space p": "file_finder::Toggle",
       "space g G": "git_panel::ToggleFocus",
       "space g e": "project_panel::ToggleFocus",
