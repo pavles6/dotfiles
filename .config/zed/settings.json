@@ -1,7 +1,7 @@
 {
   "icon_theme": "Catppuccin Mocha",
   "buffer_font_family": "IosevkaTerm Nerd Font",
-  "theme": "Catppuccin Mocha - No Italics",
+  "theme": "One Dark - Darkened",
   "ui_font_family": "SF Compact Display",
   "when_closing_with_no_tabs": "keep_window_open",
   "soft_wrap": "editor_width",
@@ -9,7 +9,6 @@
   "confirm_quit": true,
   "ui_font_size": 17,
   "buffer_font_size": 17,
-  "agent_font_size": 17,
   "vertical_scroll_margin": 15,
   "use_system_prompts": false,
   "hide_mouse": "on_typing_and_movement",
@@ -30,7 +29,8 @@
     }
   },
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
+    "show_background": true
   },
   "diagnostics": {
     "inline": {
@@ -76,6 +76,13 @@
     "W": "w",
     "Q": "q",
     "Wq": "wq",
-    "crp": "workspace: copy relative path"
+    "crp": "workspace: copy relative path",
+    "cperm": "editor: copy permalink to line",
+    "operm": "editor: open permalink to line"
+  },
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_onboarding_banner": false,
+    "show_sign_in": false
   }
 }
