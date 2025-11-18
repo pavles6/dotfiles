@@ -32,6 +32,20 @@ return {
     },
   },
   {
+    {
+      "ibhagwan/fzf-lua",
+      opts = {
+        defaults = {
+          hidden = true,
+        },
+        grep = {
+          rg_opts = "--column --line-number --no-heading --color=always --smart-case --hidden",
+        },
+      },
+    },
+  },
+  -- set catppuccin as a LazyVim theme
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin-mocha",
