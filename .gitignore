@@ -3,3 +3,4 @@
 .config/zed/conversations
 .config/zed/.tmp*
 .config/gh
+.zsh/fzf-tab
