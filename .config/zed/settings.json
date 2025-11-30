@@ -79,13 +79,6 @@
     "W": "w",
     "Q": "q",
     "Wq": "wq",
-    "crp": "workspace: copy relative path",
-    "cperm": "editor: copy permalink to line",
-    "operm": "editor: open permalink to line"
-  },
-  "title_bar": {
-    "show_branch_icon": true,
-    "show_onboarding_banner": false,
-    "show_sign_in": false
+    "crp": "workspace: copy relative path"
   }
 }
