@@ -9,6 +9,8 @@
   "confirm_quit": true,
   "ui_font_size": 17,
   "buffer_font_size": 17,
+  "agent_ui_font_size": 17,
+  "agent_buffer_font_size": 17,
   "vertical_scroll_margin": 15,
   "use_system_prompts": false,
   "hide_mouse": "on_typing_and_movement",
@@ -29,8 +31,8 @@
     }
   },
   "inlay_hints": {
-    "enabled": true,
-    "show_background": true
+    "show_background": true,
+    "enabled": true
   },
   "diagnostics": {
     "inline": {
@@ -76,13 +78,6 @@
     "W": "w",
     "Q": "q",
     "Wq": "wq",
-    "crp": "workspace: copy relative path",
-    "cperm": "editor: copy permalink to line",
-    "operm": "editor: open permalink to line"
-  },
-  "title_bar": {
-    "show_branch_icon": true,
-    "show_onboarding_banner": false,
-    "show_sign_in": false
+    "crp": "workspace: copy relative path"
   }
 }
