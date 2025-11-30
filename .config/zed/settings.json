@@ -1,7 +1,7 @@
 {
   "icon_theme": "Catppuccin Mocha",
   "buffer_font_family": "IosevkaTerm Nerd Font",
-  "theme": "Catppuccin Mocha - No Italics",
+  "theme": "One Dark - Darkened",
   "ui_font_family": "SF Compact Display",
   "when_closing_with_no_tabs": "keep_window_open",
   "soft_wrap": "editor_width",
@@ -9,7 +9,8 @@
   "confirm_quit": true,
   "ui_font_size": 17,
   "buffer_font_size": 17,
-  "agent_font_size": 17,
+  "agent_ui_font_size": 17,
+  "agent_buffer_font_size": 17,
   "vertical_scroll_margin": 15,
   "use_system_prompts": false,
   "hide_mouse": "on_typing_and_movement",
@@ -30,6 +31,7 @@
     }
   },
   "inlay_hints": {
+    "show_background": true,
     "enabled": true
   },
   "diagnostics": {
