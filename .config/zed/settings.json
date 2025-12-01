@@ -79,6 +79,7 @@
     "W": "w",
     "Q": "q",
     "Wq": "wq",
-    "crp": "workspace: copy relative path"
+    "crp": "workspace: copy relative path",
+    "pin": "pane: toggle pin tab"
   }
 }
