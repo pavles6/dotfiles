@@ -1,5 +1,6 @@
 {
   "icon_theme": "Catppuccin Mocha",
+  "colorize_brackets": true,
   "buffer_font_family": "IosevkaTerm Nerd Font",
   "theme": "One Dark - Darkened",
   "ui_font_family": "SF Compact Display",
