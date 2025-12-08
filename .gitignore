@@ -10,3 +10,4 @@
 .config/karabiner
 .config/.jira
 .config/gh
+.config/nvim/lazy-lock.json
