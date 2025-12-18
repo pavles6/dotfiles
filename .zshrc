@@ -9,6 +9,7 @@ source "$HOME/.zsh/zoxide.zsh"
 source "$HOME/.zsh/misc.zsh"
 source "$HOME/.zsh/git-snippets.zsh"
 source "$HOME/.zsh/aliases.zsh"
+source "$HOME/.zsh/git-auto-fetch.zsh"
 
 # load non-versioned local stuff
 if [ -f "$HOME/.localrc" ]; then
