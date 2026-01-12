@@ -1,4 +1,7 @@
 {
+  "title_bar": {
+    "show_sign_in": false,
+  },
   "icon_theme": "Catppuccin Mocha",
   "colorize_brackets": true,
   "buffer_font_family": "IosevkaTerm Nerd Font",
@@ -16,63 +19,63 @@
   "use_system_prompts": false,
   "hide_mouse": "on_typing_and_movement",
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "use_smartcase_search": true,
   "agent": {
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "model": "claude-sonnet-4",
     },
     "default_profile": "ask",
     "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
-    }
+      "model": "claude-sonnet-4.5",
+    },
   },
   "inlay_hints": {
     "show_background": true,
-    "enabled": true
+    "enabled": true,
   },
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "git": {
     "inline_blame": {
-      "show_commit_summary": true
-    }
+      "show_commit_summary": true,
+    },
   },
   "buffer_line_height": {
-    "custom": 1.5
+    "custom": 1.5,
   },
   "tabs": {
     "file_icons": true,
     "git_status": true,
-    "show_diagnostics": "errors"
+    "show_diagnostics": "errors",
   },
   "git_panel": {
-    "collapse_untracked_diff": true
+    "collapse_untracked_diff": true,
   },
   "project_panel": {
     "default_width": 620,
     "dock": "right",
     "scrollbar": {
-      "show": "always"
-    }
+      "show": "always",
+    },
   },
   "buffer_font_features": {
-    "calt": false
+    "calt": false,
   },
   "telemetry": {
     "metrics": false,
-    "diagnostics": false
+    "diagnostics": false,
   },
   "vim": {
     "use_smartcase_find": true,
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "always",
   },
   "command_aliases": {
     "gl": "git: pull",
@@ -80,6 +83,6 @@
     "Q": "q",
     "Wq": "wq",
     "crp": "workspace: copy relative path",
-    "pin": "pane: toggle pin tab"
-  }
+    "pin": "pane: toggle pin tab",
+  },
 }
