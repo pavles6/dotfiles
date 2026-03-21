@@ -1,4 +1,8 @@
+{{ if eq .chezmoi.os "linux" -}}
+FPATH=/usr/share/zsh/plugins/zsh-completions:$FPATH
+{{ else if eq .chezmoi.os "darwin" -}}
 FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+{{ end -}}
 autoload -Uz compinit
 compinit
 

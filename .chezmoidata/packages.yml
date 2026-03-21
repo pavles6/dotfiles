@@ -1,0 +1,25 @@
+packages:
+  linux:
+    pacman:
+      - "zsh"
+      - "git"
+      - "fzf"
+      - "zoxide"
+      - "github-cli"
+      - "zellij"
+      - "neovim"
+      - "zsh-syntax-highlighting"
+      - "zsh-autosuggestions"
+      - "zsh-completions"
+      - "zed"
+      - "ghostty"
+      - "zen-browser-bin"
+      - "ripgrep"
+      - "tealdeer"
+      - "go"
+  darwin:
+    brews:
+      - "git"
+      - "fzf"
+    casks:
+      - "zed"
