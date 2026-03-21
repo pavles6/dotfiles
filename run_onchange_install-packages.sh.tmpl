@@ -3,7 +3,7 @@
 #!/bin/sh
 sudo pacman -S --noconfirm {{ range .packages.linux.pacman }}{{ . }} {{ end }}
 
-{{ else if eq .chezmoi.os "darwin" -}}
+{{ else if eq .chezmoi.os "darwin" }}
 #!/bin/zsh
 
 brew bundle --file=/dev/stdin <<EOF
