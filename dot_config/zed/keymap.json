@@ -1,0 +1,69 @@
+[
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "space": null, // Disable the default action vim::WrappingRight
+      "ctrl-f": null,
+    },
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift-s": "vim::PushAddSurrounds",
+    },
+  },
+  {
+    "context": "VimControl && !menu && vim_mode != operator",
+    "bindings": {
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordStart",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd",
+      "/": "buffer_search::Deploy",
+    },
+  },
+  {
+    "context": "Editor && edit_prediction && !showing_completions",
+    "bindings": {
+      "ctrl-f": "editor::AcceptEditPrediction",
+      "tab": "editor::Tab",
+    },
+  },
+  {
+    "context": "VimControl && !AgentPanel || GitPanel && VimControl || OutlinePanel && VimControl || EmptyPane && VimControl || MarkdownPreview && VimControl || KeyContextView && VimControl",
+    "bindings": {
+      "ctrl-w shift-l": "workspace::ToggleRightDock",
+      "ctrl-w shift-h": "workspace::ToggleLeftDock",
+      "space p": "file_finder::Toggle",
+      "space e": "project_panel::ToggleFocus",
+      "space a": "agent::ToggleNewThreadMenu",
+      "space o": "outline::Toggle",
+      "space space": "pane::DeploySearch",
+      "space x": "zed::Extensions",
+      "space G": "git_panel::ToggleFocus",
+      "space g": "git::Blame",
+      "space ,": "tab_switcher::Toggle",
+      "space b": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "space e": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "context": "AgentPanel && not_editing",
+    "bindings": {
+      "space a": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "shift-n": "editor::MoveLineDown",
+      "shift-p": "editor::MoveLineUp",
+      "ctrl-a": "editor::SelectAll",
+    },
+  },
+]

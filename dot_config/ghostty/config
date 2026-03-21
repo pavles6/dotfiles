@@ -1,0 +1,15 @@
+cursor-style="block"
+shell-integration-features = "no-cursor"
+window-theme="dark"
+macos-titlebar-style="transparent"
+macos-titlebar-proxy-icon="hidden"
+theme="one-dark-darkened"
+window-title-font-family="SF Pro Display SemiBold"
+adjust-cell-height=10
+adjust-cursor-height=2
+font-family="IosevkaTerm Nerd Font"
+font-size=18
+mouse-hide-while-typing=true
+background-opacity=1
+window-inherit-font-size=false
+confirm-close-surface=false
