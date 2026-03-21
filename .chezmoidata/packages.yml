@@ -17,6 +17,9 @@ packages:
       - "ripgrep"
       - "tealdeer"
       - "go"
+      - "ttf-iosevka-nerd"
+    aur:
+      - "apple-fonts"
   darwin:
     brews:
       - "git"

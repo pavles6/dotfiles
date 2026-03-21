@@ -30,13 +30,13 @@
     },
   },
   {
-    "context": "VimControl && !AgentPanel || GitPanel && VimControl || OutlinePanel && VimControl || EmptyPane && VimControl || MarkdownPreview && VimControl || KeyContextView && VimControl",
+    "context": "Editor && VimControl || MarkdownPreview && VimControl || KeyContextView && VimControl",
     "bindings": {
       "ctrl-w shift-l": "workspace::ToggleRightDock",
       "ctrl-w shift-h": "workspace::ToggleLeftDock",
       "space p": "file_finder::Toggle",
       "space e": "project_panel::ToggleFocus",
-      "space a": "agent::ToggleNewThreadMenu",
+      "space a": "agent::ToggleFocus",
       "space o": "outline::Toggle",
       "space space": "pane::DeploySearch",
       "space x": "zed::Extensions",
@@ -53,7 +53,7 @@
     },
   },
   {
-    "context": "AgentPanel && not_editing",
+    "context": "AgentPanel > Editor && VimControl",
     "bindings": {
       "space a": "workspace::ToggleLeftDock",
     },
