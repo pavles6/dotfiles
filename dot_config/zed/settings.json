@@ -88,4 +88,10 @@
     "crp": "workspace: copy relative path",
     "pin": "pane: toggle pin tab",
   },
+  "auto_install_extensions": {
+    "one-dark-darkened": true,
+    "cattpuccin-icons": true,
+    "git-firefly": true,
+    "kdl": true,
+  },
 }

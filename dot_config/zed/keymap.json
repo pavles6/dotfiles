@@ -30,7 +30,7 @@
     },
   },
   {
-    "context": "Editor && VimControl || MarkdownPreview && VimControl || KeyContextView && VimControl",
+    "context": "Editor && VimControl || MarkdownPreview || ImageViewer",
     "bindings": {
       "ctrl-w shift-l": "workspace::ToggleRightDock",
       "ctrl-w shift-h": "workspace::ToggleLeftDock",
