@@ -16,7 +16,6 @@ packages:
       - "zen-browser-bin"
       - "ripgrep"
       - "tealdeer"
-      - "go"
       - "ttf-iosevka-nerd"
     aur:
       - "apple-fonts"
@@ -24,5 +23,18 @@ packages:
     brews:
       - "git"
       - "fzf"
+      - "zoxide"
+      - "gh"
+      - "zellij"
+      - "neovim"
+      - "zsh-syntax-highlighting"
+      - "zsh-autosuggestions"
+      - "zsh-completions"
+      - "ripgrep"
+      - "tealdeer"
     casks:
       - "zed"
+      - "ghostty"
+      - "zen"
+      - "font-iosevka-term-nerd-font"
+      - "font-sf-compact"
