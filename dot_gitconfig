@@ -1,0 +1,12 @@
+[user]
+	email = pavles6@protonmail.com
+	name = Pavle Sokic
+[http]
+	postBuffer = 524288000
+[push]
+	autoSetupRemote = true
+[core]
+	fsmonitor = true
+	untrackedCache = true
+[pull]
+	rebase = true
