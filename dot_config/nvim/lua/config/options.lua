@@ -6,3 +6,5 @@
 vim.g.snacks_animate = false
 
 vim.opt.scrolloff = 15
+
+vim.opt.relativenumber = false
