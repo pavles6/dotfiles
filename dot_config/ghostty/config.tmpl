@@ -1,19 +1,25 @@
+shell-integration-features="no-cursor"
 cursor-style="block"
-shell-integration-features = "no-cursor"
-window-theme="dark"
-macos-titlebar-style="transparent"
-macos-titlebar-proxy-icon="hidden"
-theme="one-dark-darkened"
-window-title-font-family="SF Pro Display SemiBold"
 adjust-cell-height=10
 adjust-cursor-height=2
+
+window-theme="dark"
+theme="one-dark-darkened"
+
 font-family="IosevkaTerm Nerd Font"
+window-inherit-font-size=false
+
+mouse-hide-while-typing=true
+
+confirm-close-surface=false
+
+title=""
+
 {{ if eq .chezmoi.os "darwin" }}
 font-size=18
+background-blur=macos-glass-regular
+background-opacity=0.65
+macos-titlebar-style=transparent
 {{ else }}
 font-size=14
 {{ end }}
-mouse-hide-while-typing=true
-background-opacity=1
-window-inherit-font-size=false
-confirm-close-surface=false
