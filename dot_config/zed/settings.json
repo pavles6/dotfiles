@@ -1,4 +1,5 @@
 {
+  "context_servers": {},
   "cli_default_open_behavior": "new_window",
   "outline_panel": {
     "dock": "left"
@@ -15,9 +16,12 @@
     "model_parameters": []
   },
   "agent_servers": {
+    // work machine
     "codex-acp": {
-      "default_config_options": {
-        "reasoning_effort": "medium"
+      "favorite_config_option_values": {
+        "mode": ["read-only"],
+        "reasoning_effort": ["medium"],
+        "model": ["gpt-5.4"]
       },
       "type": "registry"
     }
@@ -52,7 +56,7 @@
   "agent_buffer_font_size": 17,
   "vertical_scroll_margin": 15,
   "use_system_prompts": false,
-  "hide_mouse": "on_typing_and_movement",
+  "hide_mouse": "on_typing_and_action",
   "use_smartcase_search": true,
   "inlay_hints": {
     "show_background": true,
@@ -64,6 +68,9 @@
     }
   },
   "git": {
+    "blame": {
+      "show_avatar": true
+    },
     "inline_blame": {
       "show_commit_summary": true
     }
@@ -87,9 +94,7 @@
       "show": "always"
     }
   },
-  "buffer_font_features": {
-    "calt": false
-  },
+  "buffer_font_features": {},
   "telemetry": {
     "metrics": false,
     "diagnostics": false
@@ -103,12 +108,11 @@
   },
   "lsp_document_colors": "inlay",
   "command_aliases": {
-    "gl": "git: pull",
-    "W": "w",
-    "Q": "q",
-    "Wq": "wq",
-    "crp": "workspace: copy relative path",
-    "pin": "pane: toggle pin tab"
+    "gl": "git::Pull",
+    "W": "workspace::Save",
+    "Q": "zed::Quit",
+    "crp": "workspace::CopyRelativePath",
+    "pin": "pane::TogglePinTab"
   },
   "auto_install_extensions": {
     "one-dark-darkened": true,
