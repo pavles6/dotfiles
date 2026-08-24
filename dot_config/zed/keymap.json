@@ -38,7 +38,7 @@
       "space e": "project_panel::ToggleFocus",
       "space a": "agent::ToggleFocus",
       "space o": "outline::Toggle",
-      "space space": "pane::DeploySearch",
+      "space space": "text_finder::Toggle",
       "space x": "zed::Extensions",
       "space G": "git_panel::ToggleFocus",
       "space g": "git::Blame",
@@ -56,6 +56,7 @@
     "context": "AgentPanel > Editor && VimControl",
     "bindings": {
       "space a": "workspace::ToggleLeftDock",
+      "space ,": "agents_sidebar::ToggleThreadSwitcher",
     },
   },
   {

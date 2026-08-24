@@ -1,51 +1,46 @@
 {
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "use_system_path_prompts": false,
   "code_lens": "on",
-  "diff_view_style": "unified",
+  "diff_view_style": "split",
   "context_servers": {},
   "cli_default_open_behavior": "new_window",
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "session": {
-    "trust_all_worktrees": true
+    "trust_all_worktrees": true,
   },
   "agent": {
     "dock": "left",
     "favorite_models": [],
-    "model_parameters": []
-  },
-  "agent_servers": {
-    // work machine
-    "codex-acp": {
-      "favorite_config_option_values": {
-        "mode": ["read-only"],
-        "reasoning_effort": ["medium"],
-        "model": ["gpt-5.4"]
-      },
-      "type": "registry"
-    }
+    "model_parameters": [],
   },
   "edit_predictions": {
-    "provider": "none"
+    "provider": "none",
   },
   "title_bar": {
     "show_sign_in": false,
-    "show_onboarding_banner": false
+    "show_onboarding_banner": false,
   },
   "icon_theme": {
     "mode": "dark",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Mocha",
   },
   "colorize_brackets": true,
   "buffer_font_family": "IosevkaTerm Nerd Font",
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "One Dark - Darkened"
+    "dark": "One Dark - Darkened",
   },
   "ui_font_family": "SF Compact Display",
   "when_closing_with_no_tabs": "keep_window_open",
@@ -62,51 +57,53 @@
   "use_smartcase_search": true,
   "inlay_hints": {
     "show_background": true,
-    "enabled": true
+    "enabled": true,
   },
   "diagnostics": {
+    "button": false,
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "git": {
     "blame": {
-      "show_avatar": true
+      "show_avatar": true,
     },
     "inline_blame": {
-      "show_commit_summary": true
-    }
+      "show_commit_summary": true,
+    },
   },
   "buffer_line_height": {
-    "custom": 1.5
+    "custom": 1.5,
   },
   "tabs": {
     "file_icons": true,
     "git_status": true,
-    "show_diagnostics": "errors"
+    "show_diagnostics": "errors",
   },
   "git_panel": {
     "dock": "left",
-    "collapse_untracked_diff": true
+    "collapse_untracked_diff": true,
   },
   "project_panel": {
     "default_width": 620,
     "dock": "right",
     "scrollbar": {
-      "show": "always"
-    }
+      "show": "always",
+    },
   },
   "buffer_font_features": {},
   "telemetry": {
     "metrics": false,
-    "diagnostics": false
+    "diagnostics": false,
   },
+
   "vim": {
     "use_smartcase_find": true,
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "always",
   },
   "which_key": {
-    "enabled": true
+    "enabled": true,
   },
   "lsp_document_colors": "inlay",
   "command_aliases": {
@@ -114,12 +111,12 @@
     "W": "workspace::Save",
     "Q": "zed::Quit",
     "crp": "workspace::CopyRelativePath",
-    "pin": "pane::TogglePinTab"
+    "pin": "pane::TogglePinTab",
   },
   "auto_install_extensions": {
     "one-dark-darkened": true,
     "cattpuccin-icons": true,
     "git-firefly": true,
-    "kdl": true
-  }
+    "kdl": true,
+  },
 }

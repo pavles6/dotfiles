@@ -1,5 +1,9 @@
 [user]
-	email = pavles6@protonmail.com
+{{ if eq .chezmoi.os "darwin" }}
+	email = psokic@bluecatnetworks.com
+{{ else }}
+  email = pavles6@protonmail.com
+{{ end }}
 	name = Pavle Sokic
 [http]
 	postBuffer = 524288000

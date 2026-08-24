@@ -1,2 +1,2 @@
 # initialize zoxide
-eval "$(zoxide init zsh)"
+[[ -z "$ZOXIDE_DISABLE" ]] && eval "$(zoxide init zsh)"
