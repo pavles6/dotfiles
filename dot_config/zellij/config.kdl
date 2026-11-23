@@ -354,12 +354,6 @@ plugins {
 // eg. "file:/path/to/my-plugin.wasm"
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
-    "file:~/.config/zellij/plugins/zjframes.wasm" {
-      hide_frame_for_single_pane       false
-      hide_frame_except_for_search     false
-      hide_frame_except_for_scroll     false
-      hide_frame_except_for_fullscreen false
-    }
 }
  
 // Use a simplified UI without special fonts (arrow glyphs)

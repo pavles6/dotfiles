@@ -1,0 +1,2 @@
+# zjframes was loaded with every hide_* option false, which disables it
+.config/zellij/plugins/zjframes.wasm
